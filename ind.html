@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <link rel="stylesheet" href="styl.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- Header Section-->
+        <div class="header">
+            <div class="header-left">
+                <img class="logol" src="images/Group 20399.svg" alt="Italian Trulli">
+            </div>
+            <div class="header-right">
+                <img class="logor" src="images/logo.svg" alt="Italian Trulli">
+            </div>
+        </div>
+
+        <div class="header-below">
+            Invoice List
+        </div>
+        <!-- Main section-->
+        <div class="msection">
+            <div class="btns">
+                <button data-modal-target="#modal" class="btn1">
+                     Add
+                </button>
+                <button class="btn1" data-modal-target="#modal-edit">
+                    <img class="icon2" src="images/Path 18191.svg"> Edit
+
+                </button>
+                <button class="btn1" data-modal-target="#modal-delete">
+                    <img class="icon3" src="images/Path 18189-1.svg"> Delete
+
+                </button>
+
+                <input type="text" placeholder="Search by invoice number">
+                <img class="icon4" src="images/search-24px (3).svg">
+
+            </div>
+            <table>
+                <tr>
+                    <th style="text-align: left;">
+                        <img class="checkb" src="images/check_box_outline_blank-black-18dp.svg">
+                        Customer Name
+                    </th>
+                    <th>Customer #</th>
+                    <th>Invoice #</th>
+                    <th>Invoice Amount</th>
+                    <th>Due Date</th>
+                    <th>Predicted Payment Date</th>
+                    <th style="text-align:center;">Notes</th>
+                </tr>
+                <tr>
+                    <td style="text-align: left;"><img class="checkb"
+                            src="images/check_box_outline_blank-black-18dp.svg">Andrea James</td>
+                    <td>2523532</td>
+                    <td>73457346735</td>
+                    <td>122.87K</td>
+                    <td>23-Jan-2021</td>
+                    <td>--</td>
+                    <td style="text-align: center;">Lorem ipsum dolor...</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;background-color: #2A5368"><img class="checkb"
+                            src="images/check_box-black-18dp.svg">Jessica Joe</td>
+                    <td style="background-color: #2A5368;">3523312</td>
+                    <td style="background-color: #2A5368;">54723243652</td>
+                    <td style="background-color: #2A5368;">1.87K</td>
+                    <td style="background-color: #2A5368;">15-Jan-2021</td>
+                    <td style="background-color: #2A5368;">--</td>
+                    <td style="text-align: center;background-color: #2A5368;">Lorem ipsum dolor sit...</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;"><img class="checkb"
+                            src="images/check_box_outline_blank-black-18dp.svg">Teresa Hawkins</td>
+                    <td>9888757</td>
+                    <td>76531467365</td>
+                    <td>22.87K</td>
+                    <td style="color: #FF5B5B;">03-Jan-2021</td>
+                    <td>--</td>
+                    <td style="text-align: center;">Lorem ipsum dolor sit...</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;background-color: #283A46;"><img class="checkb"
+                            src="images/check_box_outline_blank-black-18dp.svg">Dominic White</td>
+                    <td style="background-color: #283A46;">4523426</td>
+                    <td style="background-color: #283A46;">57635634655</td>
+                    <td style="background-color: #283A46;">55.70K</td>
+                    <td style="background-color: #283A46;">22-Mar-2021</td>
+                    <td style="background-color: #283A46;">31-May-2021</td>
+                    <td style="text-align: center;background-color: #283A46;">Lorem ipsum dolor sit...</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;"><img class="checkb"
+                            src="images/check_box_outline_blank-black-18dp.svg">Andrea James</td>
+                    <td>2523532</td>
+                    <td>73457346735</td>
+                    <td>122.87K</td>
+                    <td>23-Jan-2021</td>
+                    <td>--</td>
+                    <td style="text-align: center;">Lorem ipsum dolor sit...</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;background-color: #283A46;"><img class="checkb"
+                            src="images/check_box_outline_blank-black-18dp.svg">Jessica Joe</td>
+                    <td style="background-color: #283A46;">3523312</td>
+                    <td style="background-color: #283A46;">54723243652</td>
+                    <td style="background-color: #283A46;">1.87K</td>
+                    <td style="background-color: #283A46;">15-Jan-2021</td>
+                    <td style="background-color: #283A46;">--</td>
+                    <td style="text-align: center;background-color: #283A46;">Lorem ipsum dolor sit...</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;"><img class="checkb"
+                            src="images/check_box_outline_blank-black-18dp.svg">Teresa Hawkins</td>
+                    <td>9888757</td>
+                    <td>76531467365</td>
+                    <td>22.87K</td>
+                    <td style="color: #FF5B5B;">03-Jan-2021</td>
+                    <td>--</td>
+                    <td style="text-align: center;">Lorem ipsum dolor sit...</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;background-color: #2A5368"><img class="checkb"
+                            src="images/check_box-black-18dp.svg">Dominic White</td>
+                    <td style="background-color: #2A5368;">4523426</td>
+                    <td style="background-color: #2A5368;">57635634655</td>
+                    <td style="background-color: #2A5368;">55.70K</td>
+                    <td style="background-color: #2A5368;">22-Mar-2021</td>
+                    <td style="background-color: #2A5368;">--</td>
+                    <td style="text-align: center;background-color: #2A5368;">Lorem ipsum dolor sit...</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;"><img class="checkb"
+                            src="images/check_box_outline_blank-black-18dp.svg">Jessica Joe</td>
+                    <td>3523312</td>
+                    <td>54723243652</td>
+                    <td>1.87K</td>
+                    <td>15-Jan-2021</td>
+                    <td>--</td>
+                    <td style="text-align: center;">Lorem ipsum dolor sit...</td>
+                </tr>
+            </table>
+            <div class="modal" id="modal">
+                <div class="modal-header">
+                  <div class="title">Add</div>
+                  <button data-close-button class="close-button">&times;</button>
+                </div>
+                <div class="modal-body">
+                for
+                </div>
+            </div>
+            <div id="overlay"></div>
+            <div class="modal" id="modal-edit">
+                <div class="modal-header">
+                  <div class="title">Edit</div>
+                  <button data-close-button class="close-button">&times;</button>
+                </div>
+                <div class="modal-body">
+                edit
+                </div>
+            </div>
+            <div id="overlay"></div>
+            <div class="modal" id="modal-delete">
+                <div class="modal-header">
+                  <div class="title">Delete</div>
+                  <button data-close-button class="close-button">&times;</button>
+                </div>
+                <div class="modal-body">
+                Delete
+                </div>
+            </div>
+            <div id="overlay"></div>
+        </div>
+    </div>
+</body>
+
+</html>
